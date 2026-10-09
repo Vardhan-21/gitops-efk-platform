@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo
-          image: vardhan027/git-project-demo:v1
+          image: vardhan027/git-project-demo
           ports:
             - containerPort: 80
           imagePullPolicy: Always
