@@ -5,7 +5,7 @@ metadata:
   labels:
     app: gitops-demo
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: gitops-demo
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo
-          image: vardhan027/git-project-demo
+          image: vardhan027/git-project-demo:v1
           ports:
             - containerPort: 80
           imagePullPolicy: Always
